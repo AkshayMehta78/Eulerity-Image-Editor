@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:layout_above="@+id/BottomToobar"
+    android:id="@+id/overlayLayout">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Add Text"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_large"
+        android:id="@+id/addTextEditTextView"
+        android:padding="@dimen/padding_large"
+        android:layout_margin="@dimen/margin_medium"/>
+
+
+</RelativeLayout>

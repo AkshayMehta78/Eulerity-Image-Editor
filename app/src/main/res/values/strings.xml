@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Eulerity</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="no_data_found">No Data found from Server</string>
+    <string name="add_text">Add Text</string>
+    <string name="editor">Editor</string>
+    <string name="filters">Add Filter</string>
+    <string name="upload">Upload</string>
+    <string name="success_upload">Image uploaded</string>
+    <string name="no_write_permission">Please allow write permission to Edit Image</string>
+</resources>

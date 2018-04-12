@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#e3e3e3"
+            android:id="@+id/imageView"
+            android:layout_weight="0.7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/BottomToobar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Filter"
+                    android:gravity="center"
+                    android:id="@+id/filterTextView"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:padding="@dimen/padding_large"
+                    android:textSize="@dimen/text_size_large"
+                    android:drawableLeft="@drawable/ic_filter"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Overlay"
+                    android:gravity="center"
+                    android:id="@+id/overlayTextView"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:padding="@dimen/padding_large"
+                    android:textSize="@dimen/text_size_large"
+                    android:drawableLeft="@drawable/ic_overlay"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Flip"
+                    android:gravity="center"
+                    android:id="@+id/flipImageView"
+                    android:drawablePadding="@dimen/padding_normal"
+                    android:padding="@dimen/padding_large"
+                    android:textSize="@dimen/text_size_large"
+                    android:drawableLeft="@drawable/ic_flip"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/BottomToobar"
+                android:background="#e3e3e3"></View>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:id="@+id/BottomToobar"
+                android:padding="@dimen/padding_normal"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/cancelImageView"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_cross" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Editor"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_large"
+                    android:id="@+id/taskTitleTextView"
+                    android:layout_toLeftOf="@+id/acceptImageView"
+                    android:layout_toRightOf="@+id/cancelImageView" />
+
+                <ImageView
+                    android:id="@+id/acceptImageView"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_tick" />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/layout_filters"></include>
+
+            <include layout="@layout/layout_overlay"></include>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
